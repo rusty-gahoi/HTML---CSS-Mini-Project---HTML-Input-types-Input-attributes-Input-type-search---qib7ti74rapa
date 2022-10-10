@@ -10,10 +10,17 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-#navbar ul {
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
     display: flex;
     justify-content: center;
-    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+
 }
 
 #navbar::before {
@@ -21,16 +28,20 @@
 
     background-color: black;
     position: absolute;
+
     height: 100%;
     width: 100%;
     z-index: -1;
     opacity: 0.4;
 }
 
-#navbar {
-    position: relative;
-
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 #navbar ul li {
     list-style: none;
@@ -213,15 +224,17 @@
     padding-left: 100px;
     display: inline-block;
     height: 520px;
-    
-    
+
+
 }
-#about-details h4{
+
+#about-details h4 {
     margin: 50px 0;
     font-size: 1.8rem;
     font-weight: 500;
 }
-#about-details h4 strong{
+
+#about-details h4 strong {
     font-weight: 800;
 }
 
@@ -285,6 +298,7 @@
     /* padding: 8rem; */
     flex-wrap: wrap;
 }
+
 #contact-container #contact-heading {
     text-align: center;
     flex: 0 0 100%;
@@ -297,6 +311,7 @@
     flex: 0 0 60%;
     width: 50%;
 }
+
 #contact-container #details-right {
     flex: 0 0 40%;
     width: 50%;
@@ -309,9 +324,11 @@
     font-size: 1.8rem;
     font-weight: 500;
 }
+
 #contact-container h4 strong {
     font-weight: 800;
 }
+
 #details-right h4 {
     margin: -26px 0 50px 0;
 }
@@ -326,9 +343,11 @@
     border: none;
     margin: 10px 10px 10px 0px;
 }
+
 #message {
     height: 300px;
 }
+
 #msg {
     border-radius: 20px;
     padding: 16px 28px;
@@ -354,13 +373,14 @@
 }
 
 .head-details {
-    color: rgba(255,255,255,.4);
+    color: rgba(255, 255, 255, .4);
     letter-spacing: .05em;
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 35px;
     display: block;
 }
+
 #address {
     line-height: 1.5rem;
 }
@@ -373,17 +393,19 @@
     background: #222;
 }
 
-#footer ul{
+#footer ul {
     display: flex;
     /* justify-content: center;
     align-items: center; */
 }
-#footer ul li{
+
+#footer ul li {
     list-style: none;
     margin: 20px;
 }
+
 .icons {
-    
+
     font-size: 30px;
     background: #333;
     padding: 25px;
@@ -393,6 +415,7 @@
 .icon {
     color: #bac964;
 }
+
 .icon :active {
     color: red;
 }
